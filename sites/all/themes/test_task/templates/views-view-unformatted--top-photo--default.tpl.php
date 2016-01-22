@@ -1,18 +1,21 @@
 <?php
 
-    /**
-     * @file
-     * Default simple view template to display a list of rows.
-     *
-     * @ingroup views_templates
-     */
+  /**
+   * @file
+   * Default simple view template to display a list of rows.
+   *
+   * @ingroup views_templates
+   */
 ?>
 <?php if (!empty($title)): ?>
-    <h3><?php print $title; ?></h3>
+  <h3><?php print $title; ?></h3>
 <?php endif; ?>
-    <h2><a href="/foto/all" style="color:#76a90a;"><?php print t('фото')?></a> </h2>
+  <h2><a href="/foto/all" style="color:#76a90a;"><?php print t('фото') ?></a>
+  </h2>
 <?php foreach ($rows as $id => $row): ?>
-    <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
-        <?php print $row; ?>
-    </div>
+  <div<?php if ($classes_array[$id]) {
+    print ' class="' . $classes_array[$id] . '"';
+  } ?>>
+    <?php print $row; ?>
+  </div>
 <?php endforeach; ?>

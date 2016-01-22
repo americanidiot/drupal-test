@@ -1,0 +1,5 @@
+name = My Module
+description = Simple module that adds share buttons to Easy Social
+package = Other
+core = 7.x
+datestamp = "1439585340"

@@ -1,0 +1,44 @@
+
+name = Test task
+package = Core
+version = VERSION
+core = 7.x
+
+stylesheets[all][] = css/factsTwo2.css
+stylesheets[all][] = css/skin.css
+stylesheets[all][] = css/style7.css
+
+scripts[] = js/jquery1.5.1.js
+scripts[] = js/modernizr.custom.56341.js
+scripts[] = js/jquery.jcarousel.min.js
+scripts[] = js/slides.min.jquery.js
+scripts[] = js/js.js
+
+regions[header] = Header
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[highlighted] = Highlighted
+
+regions[featured] = Featured
+regions[content] = Content
+
+regions[footer] = Footer
+regions[newOneFirst] = newOneFirst
+regions[newOneSecond] = newOneSecond
+regions[newTwoSecond] = newTwoSecond
+regions[newAndPopularNews] = newAndPopularNews
+regions[photoAndVideos] = photoAndVideos
+regions[leftAndRightAdv] = leftAndRightAdv
+regions[IndexAdv1] = IndexAdv1
+regions[IndexAdv2] = IndexAdv2
+regions[IndexAdv3] = IndexAdv3
+regions[orakul] = orakul
+
+settings[shortcut_module_link] = 0
+
+
+; Information added by Drupal.org packaging script on 2015-10-21
+version = "7.41"
+project = "drupal"
+datestamp = "1445457729"
+

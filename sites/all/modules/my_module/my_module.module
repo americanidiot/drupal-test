@@ -1,0 +1,64 @@
+<?php
+
+    function my_module_easy_social_widget() {
+        return array(
+            'vk_share_button' => array(
+                'name' => 'Vk share', // apears on admin pages only
+                'markup' => '_my_module_vk_share_button_markup', // callback function that returns widget markup
+                'scripts' => array(
+                    array(
+                        'path' => 'http://vk.com/js/api/openapi.js?121', // javascript include,
+                        'type' => 'external', // 'external', 'module' or 'inline', defaults to 'external'
+                    ),
+                ),
+            ),
+            'fb_share_button' => array(
+                'name' => 'Fb share', // apears on admin pages only
+                'markup' => '_my_module_fb_share_button_markup', // callback function that returns widget markup
+
+            ),
+        );
+    }
+
+    function _my_module_vk_share_button_markup($url, $type, $title = NULL, $lang = 'en') {
+        // $url: The url to share
+        // $type: The type of widget, one of EASY_SOCIAL_WIDGET_HORIZONTAL or EASY_SOCIAL_WIDGET_VERTICAL
+        // $title: The title to share
+        // $lang: The widget's language (if applicable)
+
+        return <<<HTML
+<script type="text/javascript">
+  VK.init({apiId: 4513350, onlyWidgets: true});
+</script>
+<!-- Put this div tag to the place, where the Like block will be -->
+<div id="vk_like"></div>
+<script type="text/javascript">
+VK.Widgets.Like("vk_like", {type: "button"});
+</script>
+HTML;
+    }
+
+    function _my_module_fb_share_button_markup($url, $type, $title = NULL, $lang = 'en') {
+        // $url: The url to share
+        // $type: The type of widget, one of EASY_SOCIAL_WIDGET_HORIZONTAL or EASY_SOCIAL_WIDGET_VERTICAL
+        // $title: The title to share
+        // $lang: The widget's language (if applicable)
+
+        return <<<HTML
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.5&appId=753598868039812";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-share-button" data-href="$url" data-layout="button_count"></div>
+HTML;
+    }
+
+    function my_module_form_alter(&$form, &$form_state, $form_id) {
+        if($form_id == "search_form") {
+            $form['#type'] = 'hidden';
+        }
+    }

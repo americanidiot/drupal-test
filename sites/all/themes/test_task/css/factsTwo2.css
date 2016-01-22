@@ -1,0 +1,319 @@
+/*****NEW CONTAINER******/
+
+.newContainer {
+    width: 978px;
+    padding-bottom: 200px;
+}
+
+.forSlider {
+    width: 593px;
+    float: left;
+    margin-left:15px;
+
+}
+
+.forMenu {
+    float: left;
+    width: 359px;
+    margin-right:10px;
+}
+
+.forContent {
+    width: 946px;
+    background: #fff;
+
+    padding: 15px;
+}
+
+.newOne {
+    float: left;
+    width: 581px;
+
+
+}
+
+.newTwo {
+    width: 340px;
+    float: right;
+}
+.newOneFirst {
+    float: left;
+    width: 200px;
+
+}
+
+.newOneSecond {
+    float: right;
+    width: 360px;
+
+}
+.newTwoFirst {
+    float: left;
+    width: 140px;
+    height: 200px;
+
+}
+
+.newTwoSecond {
+    float: right;
+    width: 200px;
+
+
+}
+
+.newAnons {
+    width: 141px;
+
+}
+/*****FACTS*****/
+
+.clear {
+    clear:both;
+}
+
+.borderFacts {
+    width: 360px;
+    margin-bottom: 15px;
+
+}
+
+.borderFacts .factsTitle {
+
+
+    padding-right: 5px;
+    position: absolute;
+    top: 1px;
+
+    background: #fff;
+}
+
+.borderFacts .forBorder {
+    border-bottom: 1px solid #76a90a;
+    margin-bottom: 10px;
+
+
+    height: 14px;
+}
+
+.borderFacts .factsTitle a{
+    color: #76a90a;
+    font-family: 'myriad_proregular';
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.borderFacts .factsTitle a:hover{
+    text-decoration: underline;
+}
+
+.borderFacts .factsMain {
+    float: left;
+    width: 145px;
+    margin-right: 15px;
+}
+
+.borderFacts .factsImg {
+    width: 145px;
+    height: 100px;
+    margin-bottom: 10px;
+
+    overflow: hidden;
+
+}
+
+.borderFacts .factsImg img {
+    width: 145px;
+}
+
+.borderFacts .factsText {
+    color: #2777c2;
+    font-size: 14px;
+    font-family: 'myriad_proregular';
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.borderFacts .factsMini {
+    float: right;
+    width: 195px;
+
+
+}
+
+.factsOneMini {
+    width: 195px;
+    margin-bottom: 15px;
+}
+
+.factsMiniImg {
+    width: 80px;
+    height: 45px;
+    overflow: hidden;
+    margin-right: 10px;
+
+}
+
+.factsMiniImg img {
+    width: 80px;
+}
+
+.factsMiniText {
+    float: right;
+    width: 105px;
+}
+
+.miniLink {
+    margin-bottom: 5px;
+}
+
+.miniDate {
+    color: #bbb9b9;
+
+}
+
+.miniLink a{
+    color: #101415;
+    font-weight: bold;
+}
+
+/*****POLL******/
+
+.mainPoll {
+    width: 340px;
+    font-size: 12px;
+    overflow: hidden;
+    margin-bottom: 15px;
+
+}
+
+.mainPoll .forHide, .forShow {
+    width: 100%;
+}
+
+.forShow {
+    display: none;
+}
+
+.oneAnswer {
+    width: 100%;
+    margin: 8px 0;
+    line-height: 13px;
+    cursor: pointer;
+}
+
+.oneAnswer .aaans {
+
+    padding: 5px 10px;
+
+
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #9b9a9a;
+    background: #f6f6f6;
+}
+
+.oneAnswer .aaans:hover {
+    border: 1px solid #9b9a9a;
+    background: #d9d7d7;
+}
+
+.yesAns {
+    margin: 5px 0;
+}
+
+
+
+
+
+.oneQuest {
+    font-size: 14px;
+    line-height: 15px;
+    font-weight: bold;
+
+}
+
+.pollGraph {
+    float:left;
+    width: 60px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+.pollBG0, .pollBG1, .pollBG2, .pollBG3, .pollBG4, .pollBG5, .pollBG6, .pollBG7, .pollBG8, .pollBG9 {
+
+    height: 14px;
+    max-width: 210px;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius:4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    background: #cdcdcd;
+}
+
+.borderPollBG {
+    float: left;
+    height: 14px;
+    width: 210px;
+    border: 1px solid #cdcdcd;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.forAnons {
+
+    padding: 5px 0;
+}
+
+.anonsTitle a {
+    font-size: 12px;
+    color: #101415;
+    font-weight: bold;
+    font-family: 'myriad_proregular';
+}
+
+.anonsDate {
+    color: #878787;
+    margin-bottom: 2px;
+}
+
+.pollProc {
+    font-weight: bold;
+    float: right;
+    width: 60px;
+    text-align: center;
+}
+
+
+
+.section-tabs ul.tabs li span {
+    border-bottom: 1px #000 dotted;
+}
+
+.section-tabs ul.tabs li.current span {
+    border: none;
+}
+.tabsTwo {
+    background: #f3f7fb;
+}
+
+.tabsTwo
+
+.liTwo {
+    padding-left:  10px;
+    padding-right:  10px;
+    color: #000;
+}
+
+/**********/
+
+.tab {
+    margin-top: -5px;
+}
